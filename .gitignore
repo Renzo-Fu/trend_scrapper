@@ -23,9 +23,5 @@ data/
 .idea/
 *.swp
 
-# Poetry
-poetry.lock
-
-
 # Ignore JSON file storing scraped article IDs
 trendhunter_ids.json
