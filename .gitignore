@@ -1,0 +1,31 @@
+# Python bytecode files
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Virtual environment
+venv/
+.env/
+.poetry/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Data directory (unless you want to track the CSV)
+data/
+
+# CSV files (if you prefer not to track them)
+*.csv
+
+# IDE/Editor specific
+.vscode/
+.idea/
+*.swp
+
+# Poetry
+poetry.lock
+
+
+# Ignore JSON file storing scraped article IDs
+trendhunter_ids.json
