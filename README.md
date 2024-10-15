@@ -38,8 +38,6 @@ trend_scrapper/
 │   ├── scraper.py            # Scraping logic (main functions)
 │   └── main.py               # Entry point (execution)
 │
-├── notebooks/               # Jupyter/Colab notebooks
-│   └── scraping_notebook.ipynb
 │
 ├── requirements.txt         # Project dependencies
 │
@@ -88,15 +86,6 @@ This command will install all dependencies listed in `pyproject.toml` including:
 - `requests`
 - `pandas`
 
-### 4. Set Up WebDriver
-
-Ensure that the Chrome WebDriver is installed on your system. You can download it from [here](https://sites.google.com/chromium.org/driver/). Make sure that the version of the WebDriver matches the version of Chrome installed on your machine.
-
-Once downloaded, either:
-
-- Add the WebDriver path to your system's environment variables.
-- Alternatively, specify the path directly in the `set_up_driver()` function in `src/driver_setup.py`.
-
 ## Running the Project
 
 To run the scraping script, execute the following command:
@@ -109,7 +98,8 @@ The script will:
 
 1. Open a headless Chrome browser.
 2. Scrape articles from TrendHunter.
-3. Store the results in a CSV file named `trendhunter.csv`.
+3. Store the results in a CSV file named `data/trendhunter.csv`.
+4. Store URLs in a json file for future parsing
 
 ### Viewing the Results
 
